@@ -381,9 +381,9 @@
           <GroupName>Source</GroupName>
           <Files>
             <File>
-              <FileName>Lab1.c</FileName>
+              <FileName>Spectrum.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Lab1.c</FilePath>
+              <FilePath>.\Spectrum.c</FilePath>
             </File>
             <File>
               <FileName>BSP.c</FileName>
