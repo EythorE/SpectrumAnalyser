@@ -5,4 +5,4 @@
 .\objects\spectrum.o: ../inc/Profile.h
 .\objects\spectrum.o: Texas.h
 .\objects\spectrum.o: ../inc/CortexM.h
-.\objects\spectrum.o: FFT.h
+.\objects\spectrum.o: fix_fft.h

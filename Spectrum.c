@@ -4,8 +4,7 @@
 #include "Profile.h"
 #include "Texas.h"
 #include "CortexM.h"
-#include "FFT.h"
-
+#include "fix_fft.h"
 
 // Global Variables
 //color constants
@@ -22,11 +21,11 @@
 #define fftLength 512
 #define logfft 9
 uint16_t SoundData;					// raw data sampled from the microphone
-double real[fftLength]; 			// geymir sample fyrir fft og svo niðurstöðu
-double imag[fftLength];
-double V[10];						// FFT Bins
+short real[fftLength]; 			// geymir sample fyrir fft og svo niðurstöðu
+short imag[fftLength];
+short V[10];						// FFT Bins
 int ReDrawAxes = 1;					// endurteiknar Axes ef != 0
-uint32_t sampleTime, FFTtime;		// Stopwatch
+int32_t sampleTime, FFTtime;		// Stopwatch
 int kfft; // skoða þetta
 
 // Task 4 teiknar eftir hvað plotstate er
@@ -75,16 +74,16 @@ void Task1(void){
 	t0 = BSP_Time_Get();
 	for(kfft = 0; kfft < fftLength; kfft++){
 		BSP_Microphone_Input(&SoundData);
-		real[kfft] = (double)SoundData;
+		real[kfft] = ((int)SoundData)-512;
 	}
 	t1 = BSP_Time_Get();
 	sampleTime = t1-t0;
 	
 	// FFT útreikningar
 	t0 = BSP_Time_Get();
-	FFT(1, logfft, real, imag);
+	short p2 = fix_fft(real, imag, logfft, 0);
 	for ( int i = 0; i < 51; i++){
-		real[i] =(sqrt((double)real[i] * (double)real[i] + (double)imag[i] * (double)imag[i]))/fftLength*8+420;  // nóg að fara upp í 51
+		real[i] = sqrt((real[i] * real[i] + imag[i] * imag[i]))*4+420;  //sleppi sqrt
 	}
 	for(int j = 0; j<fftLength; j++){
 		imag[j] = 0;
@@ -153,7 +152,7 @@ void Task4(void){
 			BSP_LCD_PlotPoint(real[i], SOUNDCOLOR);
 			BSP_LCD_PlotIncrement();
 		}
-		BSP_LCD_DrawString(2, 0,  "Sampling:",  TOPTXTCOLOR);
+ 		BSP_LCD_DrawString(2, 0,  "Sampling:",  TOPTXTCOLOR);
 		BSP_LCD_SetCursor(12, 0); BSP_LCD_OutUDec(sampleTime, LIGHTCOLOR);
 		BSP_LCD_DrawString(2, 1,  "FFT=",  TOPTXTCOLOR);
 		BSP_LCD_SetCursor(12, 1); BSP_LCD_OutUDec(FFTtime, LIGHTCOLOR);
