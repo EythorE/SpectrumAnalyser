@@ -1,5 +1,5 @@
 Dependencies for Project 'Spectrum', Target 'Target': (DO NOT MODIFY !)
-F (.\Spectrum.c)(0x5A85DA70)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I ../inc-I.\RTE\_Target-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="524" -D_RTE_ -DTM4C123GH6PM-o .\objects\spectrum.o --omf_browse .\objects\spectrum.crf --depend .\objects\spectrum.d)
+F (.\Spectrum.c)(0x5A86D6AA)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I ../inc-I.\RTE\_Target-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="524" -D_RTE_ -DTM4C123GH6PM-o .\objects\spectrum.o --omf_browse .\objects\spectrum.crf --depend .\objects\spectrum.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BF3C4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x588BF3C4)
 I (../inc/BSP.h)(0x57E4D1AC)
@@ -14,7 +14,7 @@ I (..\inc\../inc/tm4c123gh6pm.h)(0x53886E7A)
 F (..\inc\Profile.c)(0x57583596)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I ../inc-I.\RTE\_Target-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="524" -D_RTE_ -DTM4C123GH6PM-o .\objects\profile.o --omf_browse .\objects\profile.crf --depend .\objects\profile.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BF3C4)
 I (..\inc\../inc/tm4c123gh6pm.h)(0x53886E7A)
-F (.\FFT.c)(0x5A85A3BF)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I ../inc-I.\RTE\_Target-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="524" -D_RTE_ -DTM4C123GH6PM-o .\objects\fft.o --omf_browse .\objects\fft.crf --depend .\objects\fft.d)
+F (.\FFT.c)(0x5A86D806)(--c99 -c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I ../inc-I.\RTE\_Target-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="524" -D_RTE_ -DTM4C123GH6PM-o .\objects\fft.o --omf_browse .\objects\fft.crf --depend .\objects\fft.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BF3C4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x588BF3C4)
 F (.\texas.o)(0x5A85A3C0)()

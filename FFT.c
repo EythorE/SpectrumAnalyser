@@ -16,6 +16,7 @@ short FFT(short int dir,long m,double *x,double *y)
    n = 1;
    for (i=0;i<m;i++) 
       n *= 2;
+	
 
    /* Do the bit reversal */
    i2 = n >> 1;
@@ -65,14 +66,14 @@ short FFT(short int dir,long m,double *x,double *y)
          c2 = -c2;
       c1 = sqrt((1.0 + c1) / 2.0);
    }
-
-   /* Scaling for forward transform */
+   /*
+   // Scaling for forward transform  //hraðar ef við sleppum þessu!!
    if (dir == 1) {
       for (i=0;i<n;i++) {
          x[i] /= n;
          y[i] /= n;
       }
 		}
-   
+    */
    return(1);
 }

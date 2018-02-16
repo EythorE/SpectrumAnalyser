@@ -83,8 +83,8 @@ void Task1(void){
 	// FFT útreikningar
 	t0 = BSP_Time_Get();
 	FFT(1, logfft, real, imag);
-	for ( int i = 0; i < fftLength; i++){
-		real[i] =(sqrt((double)real[i] * (double)real[i] + (double)imag[i] * (double)imag[i]))*8+420;        
+	for ( int i = 0; i < 51; i++){
+		real[i] =(sqrt((double)real[i] * (double)real[i] + (double)imag[i] * (double)imag[i]))/fftLength*8+420;  // nóg að fara upp í 51
 	}
 	for(int j = 0; j<fftLength; j++){
 		imag[j] = 0;
