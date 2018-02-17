@@ -1,0 +1,25 @@
+Spectrum analyser dagbók
+
+
+31.01.18 Miðvikudagur
+PAS -		Forrita randomized bargraph á skjáinn
+EE	-
+
+01.02.18 Fimmtudagur
+Fundur 1 -	Þurfum að hafa version control, bæta við ítarlegra gant riti
+
+14.02.18 Miðvikudagur
+EE/PAS -	Settum upp FFT, graf fyrir raw hljóðnema og fft c.a 8-12klst
+PAS -		fitta fft í bargraph
+
+15.02.18 Fimmtudagur
+Fundur 2 -	Þurfum að hafa version control, bæta við ítarlegra gant riti
+EE - 		Setti upp git og lærði að nota það, lagaði til í kóðanum. c.a 8 klst
+
+16.02.18 Föstudagur
+EE -		Gerði fft útreikninga aðeins hraðari.
+			Ætlaði að setja upp offical arm fft, gekk hægt,
+			Keil segir mér svo að kóðinn sé orðinn of stór fyrir fríu útgáfuna.
+			Prufaði því fix-fft, fft úreikningar ú 30ms í 0.5 ms,
+			Þarf að laga suð og skölun.
+			
